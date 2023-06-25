@@ -1,0 +1,123 @@
+/* colors */
+/* light green:#7edf6f
+medium green : #55c57a
+Dark green: #28b485 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right, rgba(126, 223, 111, 0.7), #28b485), url(../images/hero-bg.jpg);
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.logo {
+  height: 35px;
+}
+.logo:hover {
+  animation: moveInRight 1s ease-out;
+}
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 40px;
+}
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  letter-spacing: 35px;
+  font-weight: 400;
+  animation-name: moveInLeft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  /*  animation-delay: 3s;
+  animation-iteration-count: 3; */
+}
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 17.4px;
+  font-weight: 400;
+  animation: moveInRight 1.5s ease-out;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px) rotate(-50deg);
+  }
+  60% {
+    transform: rotate(120deg);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  transition: all 0.3s;
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.btn-white {
+  background-color: white;
+  color: #777;
+}
+
+.btn:hover {
+  transform: translateY(-13px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
