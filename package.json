@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "natours landing page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abduallahnoorsayket/Natours_project-CSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abduallahnoorsayket/Natours_project-CSS/issues"
+  },
+  "homepage": "https://github.com/abduallahnoorsayket/Natours_project-CSS#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
