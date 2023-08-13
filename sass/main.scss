@@ -1,8 +1,9 @@
-$color-primary: #55c57a;
+$color-primary: red;
 $color-primary-light: #7edf6f;
 $color-primary-dark: #28b485;
 $color-grey-dark: #777;
 $color-white: #fff;
+// @import "./layout/header";
 
 *,
 *::after,
@@ -23,8 +24,9 @@ body {
   padding: 3rem;
   box-sizing: border-box;
 }
+// s
 .header {
-  height: 95vh;
+  height: 45vh;
   background-image: linear-gradient(to right, rgba($color-primary, 0.7), #28b485), url(../images/hero-bg.jpg);
   background-position: top;
   background-size: cover;
