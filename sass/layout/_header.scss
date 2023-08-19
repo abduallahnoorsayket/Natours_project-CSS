@@ -1,5 +1,5 @@
 .header {
-  height: 55vh;
+  height: 95vh;
   background-image: linear-gradient(to right, rgba($color-primary, 0.7), #28b485), url(../images/hero-bg.jpg);
   background-position: top;
   background-size: cover;
@@ -11,10 +11,13 @@
     top: 4rem;
     left: 4rem;
   }
+
   &__logo {
     height: 3.5rem;
   }
-
+  &__logo:hover {
+    animation: moveInRight 1s ease-out;
+  }
   &__text-box {
     position: absolute;
     top: 40%;

@@ -17,56 +17,6 @@ body {
   padding: 3rem;
   box-sizing: border-box; }
 
-.header {
-  height: 45vh;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.7), #28b485), url(../images/hero-bg.jpg);
-  background-position: top;
-  background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative; }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 3.5rem; }
-
-.header__logo:hover {
-  animation: moveInRight 1s ease-out; }
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 4rem; }
-
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  letter-spacing: 3.5rem;
-  font-weight: 400;
-  animation-name: moveInLeft;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  /*  animation-delay: 3s;
-  animation-iteration-count: 3; */ }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  letter-spacing: 1.75rem;
-  font-weight: 400;
-  animation: moveInRight 1.5s ease-out; }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -97,8 +47,7 @@ body {
     opacity: 1;
     transform: translateY(0); } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -108,13 +57,12 @@ body {
   position: relative;
   font-size: 1.6rem; }
 
-.btn--white {
-  background-color: white;
-  color: #777; }
-
 .btn:hover {
   transform: translateY(-1.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
 
 .btn:active {
   transform: translateY(-0.1rem);
@@ -132,13 +80,61 @@ body {
   z-index: -1;
   transition: all 0.4s; }
 
-.btn--white::after {
-  background-color: #fff; }
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0; }
+.btn--white {
+  background-color: #fff;
+  color: #777; }
+  .btn--white::after {
+    background-color: #fff; }
 
 .btn--animated {
   animation: moveInBottom 1.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right, rgba(85, 197, 122, 0.7), #28b485), url(../images/hero-bg.jpg);
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__logo:hover {
+    animation: moveInRight 1s ease-out; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 4rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+    font-weight: 400;
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    /*  animation-delay: 3s;
+    animation-iteration-count: 3; */ }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 1.75rem;
+    font-weight: 400;
+    animation: moveInRight 1.5s ease-out; }
